@@ -1,1 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
+body {
+  background: linear-gradient(135deg, #021B3A, #003366, #011627);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ddd;
+  max-width: 600px;
+}
+
+/* BOTÃO */
+button {
+  margin-top: 30px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #FFD700, #F4C542);
+  color: #021B3A;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 70px 10%;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  border-left: 5px solid #FFD700;
+  padding-left: 15px;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 215, 0, 0.1);
+  top: -20px;
+  right: -20px;
+  border-radius: 50%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* TEXTO CARD */
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress {
+  margin-top: 15px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #FFD700, #00AEEF);
+  border-radius: 20px;
+  animation: load 1.5s ease-in-out;
+}
+
+@keyframes load {
+  from { width: 0; }
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #FFD700;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateX(10px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ===== HEXA SECTION ===== */
+.hexa {
+  text-align: center;
+}
+
+.hexa h1 {
+  font-size: 70px;
+  color: #FFD700;
+  letter-spacing: 5px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #FFD700; }
+  to { text-shadow: 0 0 30px #FFD700; }
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 50px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+}
