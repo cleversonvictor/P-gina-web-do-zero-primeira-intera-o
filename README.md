@@ -1,2 +1,2 @@
-# P-gina-web-do-zero-primeira-intera-o
+# Página web do-zero primeira interação
 Trabalho para conclusão do curso da ALURA.
