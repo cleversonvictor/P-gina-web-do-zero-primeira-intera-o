@@ -1,4 +1,4 @@
-# --> Página web do zero primeira interação :3
+# --> ⚽ Página web do zero primeira interação :3 ⚽
 Trabalho para conclusão do curso da ALURA.
 
 ## World Cup Predictor
