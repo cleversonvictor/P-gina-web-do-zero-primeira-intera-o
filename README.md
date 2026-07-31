@@ -1,8 +1,8 @@
 # --> ⚽ Página web do zero primeira interação :3 ⚽
 Trabalho para conclusão do curso da ALURA.
 
-## World Cup Predictor
-  -> O tema do meu projeto, é sobre a copa do mundo, mostrar quem é os mais prováveis a ganhar a copa e os melhores jogadores atualmente!
+## World Cup 2030 Predictor
+  -> O tema do meu projeto, é sobre a copa do mundo, mostrar quem é os mais prováveis a ganhar a copa e os melhores jogadores atualmente que irão jogar na copa de 2030!
 
 ## Objetivo
 
